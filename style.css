@@ -1,0 +1,126 @@
+body {
+    background-image: url('background\ tile.png');
+    backdrop-filter: brightness(50%); /* Changes the brightness of the background image to 50% */
+    height: 128vsh;
+    scrollbar-color: #c46637;
+}
+
+/* Adds Skate 3 Font */
+@font-face {
+    font-family: customfont;
+    src=url (Hawkeye.otf);
+}
+
+.link {
+    text-decoration: none;
+    color: #000000
+}
+
+.link:hover {
+    color: rgb(83, 83, 83); /* Changes All Links color to (Dark Gray) */
+    text-decoration: none;
+}
+
+.DownloadButtons {
+    width: 225px;
+    height: 75px;
+    font-size:20px;
+    background-color: darkgrey;
+    border-style: solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.DownloadButtons:hover {
+    background-color: rgba(169, 169, 169, 0.304); /* Makes the Buttons change to a darker gray then they already are */
+    color: white;
+}
+
+.email {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.email:hover {
+    color: rgb(83, 83, 83); /* Changes Email Links color to (Dark Gray) */
+    text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000  
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c46637;
+  }
+
+  /* Navigation Bar */
+  header {  
+    background-image: url('background\ tile.png');
+    backdrop-filter: brightness(50%); /* Changes the brightness of the background image to 25% */
+    position: fixed;  
+    left: 0;  
+    right: 0;  
+    top: 0px;  
+    height: 80px;  
+    display: flex;  
+    align-items: center;  
+    box-shadow: 0 0 200px 0 rgb(0, 0, 0);
+    border-style: double;
+    border-color: #000000;
+    border-bottom-color: #ffffff;
+    border-bottom-width: 10px;
+    box-shadow: 20px 20px 20px;
+}  
+header * {  
+    display: inline;  
+}  
+header li {  
+    margin: 42px;
+}
+
+.navlink:hover {
+    color: rgb(83, 83, 83);
+}
+  
+header li a {  
+    color: #ffffff;  
+    text-decoration: none;
+}
+
+/* Makes the current clicked link Grey */
+.CurrentNav {
+    color:rgb(181, 147, 147)
+}
+
+/* Changes Link Colors in the Credit page */
+.linkI {
+    text-decoration: none;
+    color: #EFEFEF
+}
+
+.linkI:hover {
+    color: rgb(83, 83, 83); /* Changes All Links color to (Dark Gray) */
+    text-decoration: none;
+}
+
+.CreditSaveList {
+    list-style: none;
+    float: inherit;
+    display: inline;
+    border-right: 2px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
