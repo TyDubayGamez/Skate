@@ -1,14 +1,18 @@
 body {
-    background-image: url('background\ tile.png');
     backdrop-filter: brightness(50%); /* Changes the brightness of the background image to 50% */
     height: 128vsh;
     scrollbar-color: #c46637;
+    background: url('background\ tile.png') repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Adds Skate 3 Font */
 @font-face {
     font-family: customfont;
-    src=url (Hawkeye.otf);
+    src:url ('Hawkeye.otf');
 }
 
 .link {
@@ -29,6 +33,7 @@ body {
     border-style: solid black;
     border-radius: 15px;
     cursor: pointer;
+    visibility: visible;
 }
 
 .DownloadButtons:hover {
