@@ -21,6 +21,7 @@ body {
     transition-duration: 0.9s;
     font-family: Hawkeye;
     letter-spacing: 4px;
+    transition-duration: 0.9s;
 }
 
 .link:hover {
@@ -44,6 +45,7 @@ body {
 .DownloadButtons:hover {
     background-color: rgba(169, 169, 169, 0.304); /* Makes the Buttons change to a darker gray then they already are */
     color: white;
+    transition-duration: 0.9s;
 }
 
 .email {
@@ -52,6 +54,7 @@ body {
     transition-duration: 0.9s;
     font-family: Hawkeye;
     letter-spacing: 4px;
+    transition-duration: 0.9s;
 }
 
 .email:hover {
@@ -106,6 +109,9 @@ header * {
 header li {  
     margin: 42px;
 }
+.navlink {
+    transition-duration: 0.9s;
+}
 
 .navlink:hover {
     color: rgb(83, 83, 83);
@@ -128,6 +134,7 @@ header li a {
     color: #EFEFEF;
     font-family: Hawkeye;
     letter-spacing: 4px;
+    transition-duration: 0.9s;
 }
 
 .linkI:hover {
