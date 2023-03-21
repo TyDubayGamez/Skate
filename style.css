@@ -17,12 +17,16 @@ body {
 
 .link {
     text-decoration: none;
-    color: #000000
+    color: #000000;
+    transition-duration: 0.9s;
+    font-family: Hawkeye;
+    letter-spacing: 4px;
 }
 
 .link:hover {
     color: rgb(83, 83, 83); /* Changes All Links color to (Dark Gray) */
     text-decoration: none;
+    transition-duration: 0.9s;
 }
 
 .DownloadButtons {
@@ -34,6 +38,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     visibility: visible;
+    transition-duration: 0.9s;
 }
 
 .DownloadButtons:hover {
@@ -43,12 +48,16 @@ body {
 
 .email {
     text-decoration: none;
-    color: #ffffff
+    color: #ffffff;
+    transition-duration: 0.9s;
+    font-family: Hawkeye;
+    letter-spacing: 4px;
 }
 
 .email:hover {
     color: rgb(83, 83, 83); /* Changes Email Links color to (Dark Gray) */
     text-decoration: none;
+    transition-duration: 0.9s;
 }
 
 /* width */
@@ -64,11 +73,13 @@ body {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: white;
+    transition-duration: 0.9s;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #c46637;
+    transition-duration: 0.9s;
   }
 
   /* Navigation Bar */
@@ -98,6 +109,7 @@ header li {
 
 .navlink:hover {
     color: rgb(83, 83, 83);
+    transition-duration: 0.9s;
 }
   
 header li a {  
@@ -113,12 +125,15 @@ header li a {
 /* Changes Link Colors in the Credit page */
 .linkI {
     text-decoration: none;
-    color: #EFEFEF
+    color: #EFEFEF;
+    font-family: Hawkeye;
+    letter-spacing: 4px;
 }
 
 .linkI:hover {
     color: rgb(83, 83, 83); /* Changes All Links color to (Dark Gray) */
     text-decoration: none;
+    transition-duration: 0.9s;
 }
 
 .CreditSaveList {
