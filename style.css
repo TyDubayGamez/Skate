@@ -92,7 +92,7 @@ body {
     position: fixed;  
     left: 0;  
     right: 0;  
-    top: 0px;  
+    top: -5px;  
     height: 80px;  
     display: flex;  
     align-items: center;  
@@ -100,8 +100,10 @@ body {
     border-style: double;
     border-color: #000000;
     border-bottom-color: #ffffff;
-    border-bottom-width: 10px;
-    box-shadow: 20px 20px 20px;
+    border-bottom-width: 15px;
+    border-top-color: #ffffff;
+    border-top-width: 15px;
+    box-shadow: 20px 2px 20px 20px;
 }  
 header * {  
     display: inline;  
