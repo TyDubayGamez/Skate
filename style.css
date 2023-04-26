@@ -153,3 +153,37 @@ header li a {
     margin-bottom: 10px;
     padding: 0 15px;
 }
+.parentOfUl{ 
+    text-align:center;
+}
+
+ul li {
+    list-style-position: inside;
+}
+
+.ListEdits ul {
+    padding-left: 0;
+    font-size: 30px;
+    color: #EFEFEF;
+    font-family: monospace;
+    line-height: 85px;
+    border-style: double;
+    border-width: 20px;
+    border-color: #EFEFEF;
+    border-radius: 15px;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.ListEdits h1 {
+    font-size: 45px;
+    font-family: Hawkeye;
+    color: #EFEFEF;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.ListEdits li {
+    text-align: left;
+    padding-left: 10px;
+}
