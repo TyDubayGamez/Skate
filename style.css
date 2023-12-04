@@ -1,18 +1,18 @@
 body {
-    backdrop-filter: brightness(50%); /* Changes the brightness of the background image to 50% */
+    backdrop-filter: brightness(50%);
+    /* Changes the brightness of the background image to 50% */
     height: 128vsh;
     scrollbar-color: #c46637;
-    background: url('background\ tile.png') repeat center center fixed; 
+    background: url('background\ tile.png') repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
-/* Adds Skate 3 Font */
+/* Adds Skate 3 font */
 @font-face {
     font-family: customfont;
-    src:url ('Hawkeye.otf');
+    src: url('Hawkeye.otf');
 }
 
 .link {
@@ -25,7 +25,8 @@ body {
 }
 
 .link:hover {
-    color: rgb(83, 83, 83); /* Changes All Links color to (Dark Gray) */
+    color: rgb(83, 83, 83);
+    /* Changes All Links color to (Dark Gray) */
     text-decoration: none;
     transition-duration: 0.9s;
 }
@@ -36,21 +37,28 @@ body {
     height: 75px;
     font-size: 20px;
     font-family: Hawkeye, sans-serif;
-    background: #333; /* Darker background color */
+    background: #333;
+    /* Darker background color */
     color: white;
     border: 2px solid black;
     border-radius: 15px;
     cursor: pointer;
     visibility: visible;
-    transition: background-color 1s, color 1s, box-shadow 1s, border-color 1s; /* Smooth transitions for hover effects */
-    box-shadow: 0 0 30px 6px rgba(255, 165, 0, 0.7), inset 0 0 0px 0px rgba(255, 255, 255, 0); /* Initial glow with no shadow */
+    transition: background-color 1s, color 1s, box-shadow 1s, border-color 1s;
+    /* Smooth transitions for hover effects */
+    box-shadow: 0 0 30px 6px rgba(255, 165, 0, 0.7), inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    /* Initial glow with no shadow */
 }
 
 .DownloadButtons:hover {
-    background: #222; /* Darker background color on hover */
-    color: black; /* Change text color to black on hover */
-    border-color: white; /* Change border color to white on hover */
-    box-shadow: 0 0 60px 15px rgba(255, 165, 0, 0.7), inset 0 0 30px 15px rgba(255, 255, 255, 0.5); /* 3x stronger glow with a larger shadowy circle on hover */
+    background: #222;
+    /* Darker background color on hover */
+    color: black;
+    /* Change text color to black on hover */
+    border-color: white;
+    /* Change border color to white on hover */
+    box-shadow: 0 0 60px 15px rgba(255, 165, 0, 0.7), inset 0 0 30px 15px rgba(255, 255, 255, 0.5);
+    /* 3x stronger glow with a larger shadowy circle on hover */
 }
 
 
@@ -64,7 +72,8 @@ body {
 }
 
 .email:hover {
-    color: rgb(83, 83, 83); /* Changes Email Links color to (Dark Gray) */
+    color: rgb(83, 83, 83);
+    /* Changes Email Links color to (Dark Gray) */
     text-decoration: none;
     transition-duration: 0.9s;
 }
@@ -72,36 +81,37 @@ body {
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #000000  
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: white;
     transition-duration: 0.9s;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #c46637;
     transition-duration: 0.9s;
-  }
+}
 
-  /* Navigation Bar */
-  header {  
+/* Navigation Bar */
+header {
     background-image: url('background\ tile.png');
-    backdrop-filter: brightness(50%); /* Changes the brightness of the background image to 25% */
-    position: fixed;  
-    left: 0;  
-    right: 0;  
-    top: -5px;  
-    height: 80px;  
-    display: flex;  
-    align-items: center;  
+    backdrop-filter: brightness(50%);
+    /* Changes the brightness of the background image to 25% */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
     box-shadow: 0 0 200px 0 rgb(0, 0, 0);
     border-style: double;
     border-color: #000000;
@@ -110,13 +120,16 @@ body {
     border-top-color: #ffffff;
     border-top-width: 15px;
     box-shadow: 20px 2px 20px 20px;
-}  
-header * {  
-    display: inline;  
-}  
-header li {  
+}
+
+header * {
+    display: inline;
+}
+
+header li {
     margin: 42px;
 }
+
 .navlink {
     transition-duration: 0.9s;
 }
@@ -125,15 +138,15 @@ header li {
     color: rgb(83, 83, 83);
     transition-duration: 0.9s;
 }
-  
-header li a {  
-    color: #ffffff;  
+
+header li a {
+    color: #ffffff;
     text-decoration: none;
 }
 
 /* Makes the current clicked link Grey */
 .CurrentNav {
-    color:rgb(181, 147, 147)
+    color: rgb(181, 147, 147)
 }
 
 /* Changes Link Colors in the Credit page */
@@ -146,7 +159,8 @@ header li a {
 }
 
 .linkI:hover {
-    color: rgb(83, 83, 83); /* Changes All Links color to (Dark Gray) */
+    color: rgb(83, 83, 83);
+    /* Changes All Links color to (Dark Gray) */
     text-decoration: none;
     transition-duration: 0.9s;
 }
@@ -159,8 +173,9 @@ header li a {
     margin-bottom: 10px;
     padding: 0 15px;
 }
-.parentOfUl{ 
-    text-align:center;
+
+.parentOfUl {
+    text-align: center;
 }
 
 ul li {
@@ -205,8 +220,10 @@ ul li {
     color: white;
     border: 2px solid black;
     border-radius: 15px;
-    transition: background-color 1.5s, color 1.5s, box-shadow 1.5s, border-color 1.5s; /* Smooth transitions for hover effects */
-    box-shadow: 0 0 30px 6px rgba(255, 165, 0, 0.7), inset 0 0 0px 0px rgba(255, 255, 255, 0); /* Initial glow with no shadow */
+    transition: background-color 1.5s, color 1.5s, box-shadow 1.5s, border-color 1.5s;
+    /* Smooth transitions for hover effects */
+    box-shadow: 0 0 30px 6px rgba(255, 165, 0, 0.7), inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    /* Initial glow with no shadow */
 }
 
 .SkaterRequest:hover {
@@ -215,5 +232,3 @@ ul li {
     border-color: white;
     box-shadow: 0 0 60px 15px rgba(255, 165, 0, 0.7), inset 0 0 30px 15px rgba(255, 255, 255, 0.5);
 }
-
-
