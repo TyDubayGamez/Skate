@@ -1,0 +1,373 @@
+/* Ensure the body covers the full page */
+html, body {
+    height: 100%; /* Ensure body and html take full height */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Prevent horizontal scroll if needed */
+}
+
+/* Background is applied to the body using a pseudo-element */
+body {
+    position: relative;
+    background: none; /* Remove default background */
+    overflow-y: auto;  /* Ensure vertical scrolling */
+}
+
+/* Pseudo-element to apply the background image and filter */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/site/misc/bgtile.png') repeat center center fixed;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -1; /* Ensure background stays behind the content */
+}
+
+/* Other content styling to ensure body content is scrollable */
+body {
+    padding-top: 80px; /* Adjust this padding to avoid overlap with fixed elements like header */
+}
+
+
+
+@font-face {
+    font-family: Hawkeye;
+    src: url('/fonts/Hawkeye.otf');
+}
+
+.link, .linkI, .email {
+    text-decoration: none;
+    color: #000000;
+    transition-duration: 0.9s;
+    font-family: Hawkeye;
+    letter-spacing: 4px;
+}
+
+.link:hover, .email:hover, .linkI:hover {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    transition-duration: 0.9s;
+}
+
+.DownloadButtons {
+    width: 182px;
+    height: 62px;
+    font-size: 20px;
+    font-family: Hawkeye, sans-serif;
+    background: #333;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    visibility: visible;
+    transition: background-color 1s, color 1s, box-shadow 1s, border-color 1s;
+    box-shadow: 0 0 30px 6px rgba(255, 165, 0, 0.7), inset 0 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+.DownloadButtons:hover {
+    background: #222;
+    color: black;
+    border-color: white;
+    box-shadow: 0 0 60px 15px rgba(255, 165, 0, 0.7), inset 0 0 30px 15px rgba(255, 255, 255, 0.5);
+}
+
+.SkaterRequest {
+    position: relative;
+    width: 450px;
+    height: 150px;
+    font-size: 40px;
+    font-family: Hawkeye, sans-serif;
+    background: #333;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: background-color 1.5s, color 1.5s, box-shadow 1.5s, border-color 1.5s;
+    box-shadow: 0 0 30px 6px rgba(255, 165, 0, 0.7), inset 0 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+.SkaterRequest:hover {
+    background: #222;
+    color: black;
+    border-color: white;
+    box-shadow: 0 0 60px 15px rgba(255, 165, 0, 0.7), inset 0 0 30px 15px rgba(255, 255, 255, 0.5);
+}
+
+table {
+    margin: 50px;
+    border-spacing: 20px;
+}
+
+th, td {
+    padding-top: 10px;
+}
+
+.Tskater > th {
+    height: 400px;
+    width: 170px;
+}
+
+.Tbutton th {
+    height: 62px;
+    width: 182px;
+}
+
+img {
+    height: 400px;
+    width: 170px;
+}
+
+header {
+    background-image: url('/img/site/misc/bgtile.png');
+    backdrop-filter: brightness(50%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 20px 2px 20px 20px;
+    border-style: double;
+    border-color: #000000;
+    border-bottom-color: #ffffff;
+    border-bottom-width: 15px;
+    border-top-color: #ffffff;
+    border-top-width: 15px;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 42px;
+}
+
+.navlink {
+    transition-duration: 0.9s;
+}
+
+.navlink:hover {
+    color: rgb(83, 83, 83);
+    transition-duration: 0.9s;
+}
+
+header li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.CurrentNav {
+    color: rgb(181, 147, 147)
+}
+.link {
+    text-decoration: none;
+    color: #000000;
+    transition-duration: 0.9s;
+    font-family: Hawkeye;
+    letter-spacing: 4px;
+}
+
+/* Hover Effect for Links */
+.link:hover {
+    color: rgb(83, 83, 83); /* Dark Gray on hover */
+    text-decoration: none;
+    transition-duration: 0.9s;
+}
+
+/* Email Link Styles */
+.email {
+    text-decoration: none;
+    color: #ffffff;
+    transition-duration: 0.9s;
+    font-family: Hawkeye;
+    letter-spacing: 4px;
+}
+
+.email:hover {
+    color: rgb(83, 83, 83); /* Dark Gray on hover */
+    text-decoration: none;
+    transition-duration: 0.9s;
+}
+
+/* Navigation Bar Links */
+.navlink {
+    text-decoration: none;
+    color: #ffffff;
+    transition-duration: 0.9s;
+}
+
+.navlink:hover {
+    color: rgb(83, 83, 83); /* Dark Gray on hover */
+    transition-duration: 0.9s;
+}
+
+/* Link in Credits Page */
+.linkI {
+    text-decoration: none;
+    color: #EFEFEF;
+    font-family: Hawkeye;
+    letter-spacing: 4px;
+    transition-duration: 0.9s;
+}
+
+.linkI:hover {
+    color: rgb(83, 83, 83); /* Dark Gray on hover */
+    text-decoration: none;
+    transition-duration: 0.9s;
+}
+/* Ensure the body and html take full height and are responsive */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Background and pseudo-element */
+body {
+    position: relative;
+    background: none;
+    overflow-y: auto;
+    font-family: 'Hawkeye', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/site/misc/bgtile.png') repeat center center fixed;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+/* Ensure padding for content, adjust for the header */
+body {
+    padding-top: 90px; /* Increased to accommodate for fixed header */
+}
+
+/* Responsive typography */
+h1, h2, h3, p {
+    font-size: calc(16px + 1vw); /* Responsive font size based on viewport width */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 20px;
+    table-layout: fixed; /* Ensures equal distribution of space */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.Tskater img, .Tbutton img {
+    max-width: 100%; /* Ensure images scale properly */
+    height: auto;
+}
+
+/* Button Styling for Download buttons */
+.DownloadButtons {
+    width: 100%;
+    max-width: 220px; /* Limit button width */
+    height: 62px;
+    font-size: 1.2em; /* Responsive font size */
+    background: #333;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 1s, color 1s, box-shadow 1s, border-color 1s;
+    box-shadow: 0 0 30px 6px rgba(255, 165, 0, 0.7);
+}
+
+.DownloadButtons:hover {
+    background: #222;
+    color: black;
+    border-color: white;
+    box-shadow: 0 0 60px 15px rgba(255, 165, 0, 0.7);
+}
+
+/* Header Styling */
+header {
+    background-image: url('/img/site/misc/bgtile.png');
+    backdrop-filter: brightness(50%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 20px 2px 20px 20px;
+    border-bottom: 15px double #ffffff;
+}
+
+/* Navigation links */
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header li a:hover {
+    color: rgb(83, 83, 83);
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .DownloadButtons {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1em;
+    }
+
+    table {
+        margin: 10px;
+    }
+
+    .Tskater img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: calc(20px + 2vw); /* Larger fonts on smaller screens */
+    }
+
+    header {
+        height: 60px;
+        padding: 10px;
+    }
+
+    header li {
+        font-size: 1.1em;
+    }
+}
